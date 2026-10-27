@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Save Coral Reefs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-container">
+  <button id="muteBtn" class="btn-mute">🔊 Audio: ON</button>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <!-- Start Screen -->
+  <div id="startScreen" class="overlay">
+    <h1>SAVE CORAL REEFS</h1>
+    <p>
+      <b>Pencet/Sentuh Layar</b> untuk mengarahkan ikan ke posisi tersebut.<br>
+      Tembakan air berjalan secara <b>Otomatis</b>!<br><br>
+      ⚠️ <b>Aturan Main:</b><br>
+      • Tembak & hindari <b>Ranjau Laut</b> (+5 Poin)<br>
+      • Tembak <b>Pemburu Ikan</b> (+15 Poin)<br>
+      • Kalahkan <b>BOS</b> (+100 Poin & Buff)<br>
+      • Ambil <b>O₂</b> di area kiri layar agar tidak kehabisan nafas!
+    </p>
+    <button id="startBtn" class="btn">MULAI GAME</button>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="gameOverScreen" class="overlay hidden">
+    <h1 style="color: #ef4444;">GAME OVER</h1>
+    <p id="deathReason">Kamu terkena ledakan ranjau!</p>
+    <p>Skor Akhir: <span id="finalScore" style="font-weight:bold; color:#facc15;">0</span> | High Score: <span id="highScoreText" style="font-weight:bold; color:#facc15;">0</span></p>
+    <button id="restartBtn" class="btn">MAIN LAGI</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
